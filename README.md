@@ -18,12 +18,12 @@ Start the API in one terminal:
 uvicorn backend.main:app --reload
 ```
 
-Start the web interface in another terminal:
+Start the standalone web interface in another terminal:
 
 ```powershell
 streamlit run frontend/app.py
 ```
 
-Open `http://localhost:8501`, upload an image, and choose **Analyze image**. The interactive API documentation is available at `http://127.0.0.1:8000/docs`.
+Open `http://localhost:8501`, upload an image, and choose **Analyze image**. The Streamlit interface loads `best.pt` itself, so it works on Streamlit Community Cloud without needing the FastAPI server. The interactive API documentation is available at `http://127.0.0.1:8000/docs` when the backend is running.
 
-Set `MODEL_PATH` to use weights from a different location, or set `API_URL` before launching Streamlit to connect to another API server.
+Set `MODEL_PATH` to use weights from a different location for the backend.
