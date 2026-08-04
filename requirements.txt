@@ -8,4 +8,4 @@ pandas
 pillow
 fastapi
 uvicorn
-python-multipartgit 
+python-multipart
