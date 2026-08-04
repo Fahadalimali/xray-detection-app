@@ -1,0 +1,8 @@
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+ultralytics>=8.0
+streamlit>=1.32
+requests>=2.31
+pillow>=10.0
+numpy>=1.24
